@@ -7,6 +7,7 @@
     font-family: "poppins";
 }
 
+
 :root {
     --clr-white: #efefef;
 }
@@ -46,6 +47,7 @@ main {
     background-position: center;
     background-size: cover;
     height: calc(100vh - 63px);
+    width: 100%;
 
     display: flex;
     align-items: center;
@@ -82,4 +84,17 @@ button.hover {
 
 a.hover {
     padding: 10px;
+}
+
+@media (max-width: 575px) {
+    html{
+        font-size: 13px;
+    }
+    main h1{
+        width: auto;
+    }
+
+    nav ul{
+        display: none;
+    }
 }
